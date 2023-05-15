@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin img-100 {
+    width: 100%
+}
+
+$bg: black;
+$bg1: rgba(231, 231, 231, 0.919);
+
+
+$vista: otro;
+
+body {
+    background-color: white;
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+
+    ul {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    @if $vista =desktop {
+        @media only screen and (min-width:1024px) {
+            .nav {
+                align-items: center;
+                text-transform: uppercase;
+                font-size: 15px;
+            }
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            h4 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @else if $vista =mobile {
+        @media only screen and (max-width:767px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            h4 {
+                font-size: 0.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @else {
+        .nav {
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 0.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.banner-index-salir {
+    background-image: url(../img/montaña-persona.jpg);
+    height: 600px;
+}
+
+.texto-principal {
+    background-color: rgba(0, 0, 0, 0.407);
+    border-bottom: 1px solid #fefefe;
+    text-transform: uppercase;
+    -webkit-animation: main_titulo 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: main_titulo 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes main_titulo {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes main_titulo {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.ico-index {
+    width: 40%;
+}
+
+.banner-index-contacto {
+    background-color: black;
+}
+
+.ico-index-contac {
+    width: 15%;
+}

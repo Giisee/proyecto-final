@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&family=Roboto+Condensed:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: white;
+  font-family: "Roboto Condensed";
+  font-weight: bold; }
+  body ul {
+    list-style-type: none; }
+  body a {
+    text-decoration: none; }
+  @media only screen and (min-width: 1024px) {
+    body .nav {
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 15px; }
+    body h1 {
+      font-size: 4rem; }
+    body h2 {
+      font-size: 2.5rem; }
+    body h3 {
+      font-size: 1.5rem; }
+    body h4 {
+      font-size: 1rem; }
+    body p {
+      font-size: 1.5rem; } }
+
+.banner-index-salir {
+  background-image: url(../img/montaña-persona.jpg);
+  height: 600px; }
+
+.texto-principal {
+  background-color: rgba(0, 0, 0, 0.407);
+  border-bottom: 1px solid #fefefe;
+  text-transform: uppercase;
+  -webkit-animation: main_titulo 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: main_titulo 1s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@-webkit-keyframes main_titulo {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes main_titulo {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+.ico-index {
+  width: 40%; }
+
+.banner-index-contacto {
+  background-color: black; }
+
+.ico-index-contac {
+  width: 15%; }
+
+.banner-nav {
+  background-color: black; }
+
+.logo-principal {
+  width: 40%; }
+
+footer {
+  background-color: #474747;
+  border-top: 1px solid #000;
+  text-transform: uppercase; }
+  footer h4 {
+    color: white; }
+
+.acercade-perfiles {
+  width: 100%; }
+
+.banner-perfil {
+  background-color: rgba(231, 231, 231, 0.919); }
+
+.ico-contac {
+  width: 40%; }
+
+.btn-contac {
+  color: black;
+  font-size: 25px;
+  font-weight: bold; }
+
+.img-noticias {
+  width: 100%; }
+
+.banner-tourcontac {
+  background-color: black;
+  color: white;
+  line-height: 2.5; }
